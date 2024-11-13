@@ -37,9 +37,14 @@ body {
     animation: loading-off 1s 4s forwards;
 }
 .loading-title {
-    width: 400px;
+    position: relative;
+    width: 380px;
     height: auto;
     z-index: 2;
+}
+.loading-title img {
+    width: 100%;
+    height: auto;
 }
 .process {
     position: relative;
