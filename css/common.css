@@ -5,10 +5,10 @@
 
 /* root */
 :root {
-    --color-bg-basic: #fff;
+    --color-bg-basic: #ffffff;
     --color-bg-dark: #000000;    
-    --color-bg-dark-ov: #00000060;    
-    --color-bg-loading: #ccc;
+    --color-bg-dark-ov: #00000080;    
+    --color-bg-loading: #dddddd;
     --color-primary: #AB0004;
     --color-secondary: #840012;
     --font-style-basic:"Pretendard Variable", Pretendard, sans-serif;

@@ -5,7 +5,7 @@ header {
     z-index: 1;
 }
 .header-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     translate: -50%;
@@ -30,15 +30,7 @@ header {
 }
 .logo {
     rotate: 0deg;
-}
-.logo:hover {
-    animation: logo-spin .6s ease-out forwards;
-    
-}
-@keyframes logo-spin {
-    to {
-        rotate: -360deg;
-    }
+    transform: scale(1);
 }
 .logo img {
     height: 40px;
@@ -51,15 +43,36 @@ nav ul {
     gap: 60px;
 }
 nav ul li {
+    position: relative;
     flex: 1;
     font-size: 16px;
 }
 nav ul li a {
     color: #fff;
     letter-spacing: -0.01em;
+    font-weight: 400;
 }
-nav ul li a.active {
-    font-weight: bold;
+nav ul li.active a {    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 800;  
+}
+nav ul li:hover a::before {
+    content:url(../images/active_icon.svg);
+    position: absolute;
+    top: 0;
+    left: -10px;
+    animation: nav-active-icon .4s linear infinite alternate;
+}
+nav ul li:last-child:hover a::before {
+    content:'';
+    animation:none;
+}
+@keyframes nav-active-icon {
+    to{
+        left:-20px;
+    }
 }
 /* 메인 영역 */
 main section {
