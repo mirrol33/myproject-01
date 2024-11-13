@@ -61,6 +61,14 @@ nav ul li a {
 nav ul li a.active {
     font-weight: bold;
 }
+/* 메인 영역 */
+main section {
+    position: relative;
+    min-height: 100dvh;
+}
+main section+section {
+    background-color: #fff;
+}
 /* 하단 영역 */
 footer {
     width: 100%;

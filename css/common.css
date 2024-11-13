@@ -34,7 +34,7 @@ body {
     background-color: var(--color-bg-loading);
     overflow: hidden;
     opacity: 1;
-    animation: loading-off 1s 4s forwards;
+    animation: loading-off 1s 3.8s forwards;
 }
 .loading-title {
     position: relative;
@@ -79,10 +79,9 @@ body {
     }
 }
 @keyframes loading-off {
-    99% {
+    to {
         opacity: 0;
-    }
-    100% {
         display: none;
     }
+    
 }
