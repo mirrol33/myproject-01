@@ -1,0 +1,11 @@
+/* 동영상 */
+.video-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color-primary);
+    width: 100%;
+}
+video {
+    height: 100dvh;
+}
