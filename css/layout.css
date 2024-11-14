@@ -133,6 +133,7 @@ footer {
         background-color: var(--color-primary);
     }
     .header-area {
+        width: auto;
         margin: 0 24px;
     }
     nav ul li {display: inline-block;}
