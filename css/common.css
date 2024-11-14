@@ -5,18 +5,23 @@
 
 /* root */
 :root {
-  --color-bg-basic: #ffffff;
-  --color-bg-dark: #000000;
-  --color-bg-dark-ov: #00000080;
-  --color-bg-red-ov: #ab000480;
-  --color-bg-loading: #dddddd;
+  --color-bg-basic: #fff;
+  --color-bg-dark: #1c1c1c;
+  --color-bg-dark-ov: #1c1c1c40;
+  --color-bg-red-ov: #ab000440;
+  --color-bg-loading: #ddd;
   --color-primary: #ab0004;
   --color-secondary: #840012;
   --font-style-basic: "Pretendard Variable", Pretendard, sans-serif;
+  --font-color-normal: #1c1c1c;
+  --font-color-primary: #AB0004;
+  --font-color-secondary: #777;
+  --font-color-gray: #ccc;
 }
 
 html {
   font-size: 16px;
+  color:var(--font-color-normal);
 }
 body {
   background-color: var(--color-bg-basic);
@@ -90,13 +95,13 @@ body {
 }
 /* 스크롤바 스타일변경 */
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-primary);
   border-radius: 10px;
   background-clip: padding-box;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 body::-webkit-scrollbar-track {
   background-color: #fff;

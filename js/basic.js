@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
     // lenis 시작
     lenis.start();
     // 스크롤바 생성
-    document.body.style.overflow = "auto";
+    document.body.style.overflowY = "auto";
   }, 5000); // 5초후 실행
 
 }); //// load event listener ////
