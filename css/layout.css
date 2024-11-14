@@ -4,7 +4,7 @@ header {
     width: 100%;
     z-index: 1;
 }
-.header-bg {
+.header-wrap {
     position: fixed;
     top: 0;
     left: 50%;
@@ -14,7 +14,7 @@ header {
     background-color: transparent;
     transition: background-color .5s ease;
 }
-.header-bg:hover {
+.header-wrap:hover {
     background-color: var(--color-bg-dark-ov);
 
 }
@@ -108,7 +108,7 @@ nav ul li:last-child:hover a::before {
 /* 메인 영역 */
 main section {
     position: relative;
-    min-height: 100dvh;
+    height: 100dvh;
 }
 main section+section {
     background-color: #fff;
@@ -122,15 +122,17 @@ footer {
 
 /************************ 미디어쿼리 ************************/
 .mo {display: none;}
-/* 노트북 & 태블릿 가로 */
+/* 테블릿 */
 @media all and (max-width:1200px){
     .pc {display: none;}
     .mo {display: inline-block;}
-    .header-bg {
+    .header-wrap {
+        background-color: var(--color-primary);
+    }
+    .header-wrap:hover {
         background-color: var(--color-primary);
     }
     .header-area {
-        width: auto;
         margin: 0 24px;
     }
     nav ul li {display: inline-block;}
@@ -139,26 +141,6 @@ footer {
     nav ul li:hover a::before {content: ''; animation: none;}
 }
 
-/* 태블릿 
-@media all and (max-width:768px){
-    .pc {display: none;}
-    .mo {display: inline;}
-    .header-bg {
-        background-color: var(--color-primary);
-    }
-    .header-area {
-        padding: 0 24px;
-    }
-}*/
-
 /* 모바일 
-@media all and (max-width:480px){
-    .pc {display: none;}
-    .mo {display: inline;}
-    .header-bg {
-        background-color: var(--color-primary);
-    }
-    .header-area {
-        padding: 0 24px;
-    }
-}*/
+@media all and (max-width:768px){
+} */

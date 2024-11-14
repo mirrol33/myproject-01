@@ -3,13 +3,14 @@
     left: 0;
     top: 0;
     width: 100%;
+    height: 100dvh;
     z-index: -1;
 }
 /* 동영상 영역 */
 .video-area {
     position: relative;
     width: 100%;
-    height: 100lvh;
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
