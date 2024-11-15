@@ -84,7 +84,7 @@ video {
 .imgBox-01 {
     width: 282px;
     height: 282px;
-    background: url(/images/product_img01.png);
+    background: url(../images/product_img01.png);
     background-size: contain;
     margin-top: 320px;
     margin-right: 24px;
@@ -92,7 +92,7 @@ video {
 .imgBox-02 {
     width: 310px;
     height: 348px;
-    background: url(/images/product_img02.png);
+    background: url(../images/product_img02.png);
     background-size: 440px;
     background-position: 40% 0;
     margin-top: 360px;
@@ -101,7 +101,7 @@ video {
 .imgBox-03 {
     width: 540px;
     height: 750px;
-    background: url(/images/product_img03.png);
+    background: url(../images/product_img03.png);
     background-position: 22% 80%;
     margin-top: 320px;
 }
