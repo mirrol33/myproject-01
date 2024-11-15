@@ -1,4 +1,3 @@
-
 /* 메인 영역 */
 main section {
     position: relative;
@@ -10,7 +9,11 @@ main section+section {
 main .section-03 {
     background-color: #F8E5E3;
 }
-
+main section .inner {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-bottom: 180px;
+}
 .visual {
     position: fixed;
     left: 0;
@@ -19,11 +22,7 @@ main .section-03 {
     height: 100dvh;
     z-index: -1;
 }
-main section .inner {
-    width: 1200px; 
-    margin: 0 auto;
-    padding-bottom: 180px;
-}
+
 /* 동영상 영역 */
 .video-area {
     position: relative;
@@ -44,13 +43,13 @@ video {
     top: 120px;
     left: 0;
     width: 100vw;
+    overflow: hidden;
 }
 .loop-text-inner {
-    width: 200vw;
+    width: auto;
     display: flex;
-    translate: 0%;
-    
-    animation: textLoop 8s linear infinite;
+    translate: 0%;    
+    /* animation: textLoop 8s linear infinite; */
 }
 .loop-text-inner ul {
     flex: 1;
@@ -58,11 +57,13 @@ video {
 }
 .loop-text-inner ul li {
     flex: 1;
-    font-size: 3.4vw;
+    font-size: 80px;
     font-weight: 800;
     text-align: center;
     letter-spacing: -0.1rem;
     color: var(--font-color-gray);
+    white-space: nowrap;
+    padding: 0 40px;
 }
 @keyframes textLoop{
     to{
@@ -109,12 +110,44 @@ video {
 /* 하단 텍스트박스 영역 */
 .textBox span {
     font-size: 16px;
-    letter-spacing: 0.73rem;
+    font-weight: 400;
+    letter-spacing: 0.60rem;
     color:var(--font-color-primary);
 }
 .textBox h2 {
+    margin-top: 8px;
+    margin-left: -4px;
     font-size: 60px;
     font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.1rem;  
+    color: #1c1c1c;  
+}
+.textBox p {
+    margin-top: 20px;
+    color: #777;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.4;
     letter-spacing: -0.1rem;
-    margin-left: -4px;
+}
+.moreBtn {
+    position: relative;
+    margin-top: 40px;
+    padding: 20px 28px;    
+    border: 1px solid #777;
+    display: inline-block;
+}
+.moreBtn a {
+    font-size:16px;
+    font-weight: 300;
+    color: #777;    
+}
+.moreBtn a img {
+    padding-left: 60px;
+}
+
+/************************ 미디어쿼리 ************************/
+@media all and (max-width:1200px){
+        
 }
