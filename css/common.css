@@ -8,9 +8,10 @@
   --color-bg-basic: #fff;
   --color-bg-dark: #1c1c1c;
   --color-bg-dark-ov: #1c1c1c40;
-  --color-bg-red-ov: #ab000440;
+  --color-bg-red: #AB0004;
+  --color-bg-red-ov: #AB000440;
   --color-bg-loading: #ddd;
-  --color-primary: #ab0004;
+  --color-primary: #AB0004;
   --color-secondary: #840012;
   --font-style-basic: "Pretendard Variable", Pretendard, sans-serif;
   --font-color-normal: #1c1c1c;
