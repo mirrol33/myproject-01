@@ -103,14 +103,6 @@ nav ul li:last-child:hover a::before {
 	bottom: 0;
 }
 
-/* 메인 영역 */
-main section {
-    position: relative;
-    height: 100dvh;
-}
-main section+section {
-    background-color: #fff;
-}
 /* 하단 영역 */
 footer {
     width: 100%;
